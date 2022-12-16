@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lja8H2xdPxiaESRCZb/tg7OaxZ+vK5i1dot9eIV3sUXPEmS3Qn046fFf2IyTeySyvbu6asbvNjkRi4SpXVSP+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\berly\\Downloads\\AutoCompleteEntry-master\\AutoCompleteEntry-master\\AutoCompleteEntry\\AutoCompleteEntry.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berly\\.nuget\\packages\\dotmorten.xamarin.forms.autosuggestbox\\1.1.1\\dotmorten.xamarin.forms.autosuggestbox.1.1.1.nupkg.sha512",
+    "C:\\Users\\berly\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\berly\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\berly\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\berly\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

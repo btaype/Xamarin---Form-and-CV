@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoCompleteEntry.MainPage"
+             xmlns:control="clr-namespace:dotMorten.Xamarin.Forms;assembly=dotMorten.Xamarin.Forms.AutoSuggestBox"
+             
+             >
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="180" />
+                <ColumnDefinition Width="180" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="3" Orientation="Vertical" >
+                <Label  Text="FORMULARIO " TextColor="Black" HorizontalOptions="Center"  VerticalOptions="Center" FontSize="24"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="3" Orientation="Vertical"  >
+                <Label Text="Nombres y Apellidos: " TextColor="Black"/>
+                <Entry x:Name="nombre" Placeholder="Ingrese su nombre" />
+            </StackLayout>
+
+            
+
+            <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+                <Label Text="Fecha de Nacimiento: " TextColor="Black" />
+                <DatePicker x:Name="fecha"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Vertical" >
+                <Label Text="Nacionalidad:" TextColor="Black"/>
+                <Picker x:Name="nacionalidad" Title="---opciones---">
+
+                    <Picker.Items>
+                        <x:String>Peru</x:String>
+                        <x:String>Brasil</x:String>
+                        <x:String>Argentina</x:String>
+                        <x:String>Chile</x:String>
+                        <x:String>EE.UU</x:String>
+                        <x:String>Otros</x:String>
+                    </Picker.Items>
+
+
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" x:Name="ocupation" >
+                <Label Text="Ocupacion: " TextColor="Black" HorizontalOptions="Center"  VerticalOptions="Center"/>
+                <Entry x:Name="ocupacion" Placeholder="Ingrese su ocupacion" />
+            </StackLayout>
+
+            
+
+
+            <StackLayout Grid.Row="5" Grid.Column="1"  Orientation="Vertical" >
+                <Label Text="Telefono:" TextColor="Black"/>
+                <Entry x:Name="telf" Placeholder="telefono" />
+            </StackLayout>
+            <StackLayout Grid.Row="5" Grid.Column="2"   Orientation="Vertical" >
+                <Label Text="Email:" TextColor="Black"/>
+                <Entry x:Name="email" Placeholder="Email" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" >
+                <Label Text="Nivel de Ingles" TextColor="Black"/>
+                <RadioButton x:Name="nivel" Content="Básico" CheckedChanged="seleccion"/>
+                <RadioButton x:Name="nivel1" Content="Intermedio" CheckedChanged="seleccion" />
+                <RadioButton x:Name="nivel2" Content="Avanzado"  CheckedChanged="seleccion"/>
+                <RadioButton x:Name="nivel3" Content="Fluido"  CheckedChanged="seleccion"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" >
+                <Label Text="Leguajes de Programacion:" TextColor="Black"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Grid.Row="0" Grid.Column="0" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="C++" FontSize="Body"/>
+
+
+                    <CheckBox Grid.Row="1" Grid.Column="0" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="C#" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="2" Grid.Column="0" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="C" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="3" Grid.Column="0" />
+                    <Label Grid.Row="3" Grid.Column="1" Text="Python" FontSize="Body"/>
+
+
+                    <CheckBox Grid.Row="0" Grid.Column="2" />
+                    <Label Grid.Row="0" Grid.Column="3" Text="Java" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="1" Grid.Column="2" />
+                    <Label Grid.Row="1" Grid.Column="3" Text="JavaScript" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="2" Grid.Column="2" />
+                    <Label Grid.Row="2" Grid.Column="3" Text="Go" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="3" Grid.Column="2" />
+                    <Label Grid.Row="3" Grid.Column="3" Text="Bash Script" FontSize="Body"/>
+
+
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" >
+                <Label Text="Aptitud:" TextColor="Black"/>
+                <control:AutoSuggestBox x:Name="contryEntry" PlaceholderText="escriba"
+                                TextChanged="contryEntry_TextChanged" QuerySubmitted="contryEntry_QuerySubmitted"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" >
+                <Label Text="Habilidades:" TextColor="Black"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Grid.Row="0" Grid.Column="0" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="Sentido de la responsibilidad" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="1" Grid.Column="0" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="Confianza" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="2" Grid.Column="0" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="Capacidad de trabajar en equipo" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="3" Grid.Column="0" />
+                    <Label Grid.Row="3" Grid.Column="1" Text="Sentido de las relaciones con los clientes" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="4" Grid.Column="0" />
+                    <Label Grid.Row="4" Grid.Column="1" Text="Iniciativa" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="5" Grid.Column="0" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="Creatividad" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="6" Grid.Column="0" />
+                    <Label Grid.Row="6" Grid.Column="1" Text="Gestion del estres y presion" FontSize="Body"/>
+
+                    <CheckBox Grid.Row="7" Grid.Column="0" />
+                    <Label Grid.Row="7" Grid.Column="1" Text="Capacidad de analisis" FontSize="Body"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Label Text="Perfil: " TextColor="Black" />
+                <Editor x:Name="editor" Text="" Grid.RowSpan="3" HeightRequest="150" Background="white"/>
+            </StackLayout>
+            <StackLayout Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Button HorizontalOptions="Center" VerticalOptions="Center" Text="Submit" Clicked="ButtonSubmitClicked" ></Button>
+            </StackLayout>
+
+        </Grid>
+        
+    </ScrollView>
+
+</ContentPage>

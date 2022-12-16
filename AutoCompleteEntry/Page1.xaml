@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="AutoCompleteEntry.Page1"
+>
+
+
+    <ScrollView>
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="AUTO" />
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" TextColor="White" BackgroundColor="Gray" HorizontalTextAlignment="Center"/>
+            <controls:CircleImage HeightRequest="70" WidthRequest="70" Aspect="AspectFill" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" VerticalOptions="Center" HorizontalOptions="Center" Source="https://e7.pngegg.com/pngimages/363/1014/png-clipart-mr-bean-mr-bean.png"/>
+            <Label x:Name="nombre" Text="" FontSize="Title" Grid.Row="0" Grid.Column="1" TextColor="White" BackgroundColor="Gray" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Label Text="Puesto Ocupado/ Buscado" FontSize="Body" Grid.Row="1" Grid.Column="1" TextColor="White" BackgroundColor="Gray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <StackLayout Grid.Row="2" Grid.Column="0" Background="LightGray">
+                <Grid  RowSpacing="0" ColumnSpacing="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="- Contacto" FontSize="Body" Grid.Row="0" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label x:Name="telf" Text="- 999 999 999" FontSize="Micro" Grid.Row="1" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label x:Name="correo" Text="- jose.martinez@gmail.com" FontSize="Micro" Grid.Row="2" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label x:Name="nacionalidadd" Text="-" FontSize="Micro" Grid.Row="3" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- linkedin.com/jose-martinez" FontSize="Micro" Grid.Row="4" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="IDIOMAS" FontSize="Body" Grid.Row="5" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Español: Nativo" FontSize="Micro" Grid.Row="6" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label x:Name="nivel"  Text="- Inglés: " FontSize="Micro" Grid.Row="7" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Francés: Intermedio(B2)" FontSize="Micro" Grid.Row="8" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="APTITUDES" FontSize="Body" Grid.Row="9" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Inteligencia Emocional" FontSize="Micro" Grid.Row="10" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Espiritu Critico" FontSize="Micro" Grid.Row="11" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Trabajo en Equipo" FontSize="Micro" Grid.Row="12" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Capacidad analítica" FontSize="Micro" Grid.Row="13" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Habilidades Físicas" FontSize="Micro" Grid.Row="14" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="HABILIDADES" FontSize="Body" Grid.Row="15" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Acondicionamiento físico" FontSize="Micro" Grid.Row="16" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Creacion videos deportivos" FontSize="Micro" Grid.Row="17" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Pack Office" FontSize="Micro" Grid.Row="18" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Tenis" FontSize="Micro" Grid.Row="19" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="OTROS INTERESES" FontSize="Body" Grid.Row="19" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Creador de yincanas" FontSize="Micro" Grid.Row="20" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Paseos ecológicos grupales" FontSize="Micro" Grid.Row="21" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label Text="- Lectura grupal en inglés" FontSize="Micro" Grid.Row="22" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    
+                    <Label Text="Ocupaciones" FontSize="Body" Grid.Row="23" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                    <Label x:Name="ocupacion" Text="" FontSize="Micro" Grid.Row="24" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="LightGray" HorizontalTextAlignment="Start"/>
+                
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1">
+                <Grid  RowSpacing="0" ColumnSpacing="0" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="PERFIL" FontSize="Body" Grid.Row="0" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+                    <Label Text="Trabajador social con 4 años de experiencia en proyectos colectivos Mi objetivo es lograr que los jovenes obtengan acceso a la educacion superior mediante logros deportivos." FontSize="Micro" Grid.Row="1" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="White" />
+                    <Label Text="EXPERIENCIA LABORAL" FontSize="Body" Grid.Row="2" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="Trabajador Social" FontSize="Body" Grid.Row="3" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" >
+                    </Label>
+                    <Label Text="México DF, | 2022 - Actualmente" FontSize="Body" Grid.Row="4" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="- Coordinador y mediador entro los equipos de ayuda psicologica a jovenes y niños en exclusion social.
+                   &#10;- Velar por la salud mental del equipo y de miembros involucrados en proyectos. 
+                   &#10;- Mepeo de necesidades estrategicas y logicas para las diferentes areas. 
+                   &#10;- Monitor de ejercicios fisicos para adolecentes. 
+                   &#10;- Programar diferentes actividades extracurriculares en los involucrados." FontSize="Micro" Grid.Row="5" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="Trabajador Social" FontSize="Body" Grid.Row="6" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="México DF, | 2020-2022 - Actualmente" FontSize="Body" Grid.Row="7" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="- Funciones para seguimientos de casos para jovenes con problemas de adicciones.
+                   &#10;- Capacitaciones e integracion vinculadas a medias preventivas.
+                   &#10;- Recopilacion de evidencias para auditorias y programas sociales."
+                   FontSize="Micro" Grid.Row="8" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="Trabajador Social(Prácticas)" FontSize="Body" Grid.Row="9" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="Zaragoza, España | 2019-2020 " FontSize="Body" Grid.Row="10" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="- Profesor de lengua española e inglesa para jovenes migrantes. 
+                   &#10;- Monitor de actividades ecologicas con adolecentes. 
+                   &#10;- Coordinador de areas deportivas."
+                   FontSize="Micro" Grid.Row="11" Grid.ColumnSpan="2"  TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="FORMACION" FontSize="Body" Grid.Row="12"  Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Start"/>
+
+                    <Label Text="Grado de Trabajo Social" FontSize="Body" Grid.Row="13" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="ESMA, Madrid | 2012 - 2015" FontSize="Body" Grid.Row="14" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+
+                    <Label Text="Licenciatura Profesional" FontSize="Body" Grid.Row="15" Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+                    <Label Text="Universidad de la Frontera, Mexico DF | 2011-2012" FontSize="Body" Grid.Row="16"  Grid.ColumnSpan="2" TextColor="Black" BackgroundColor="White" ></Label>
+
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

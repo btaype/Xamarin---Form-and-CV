@@ -1,0 +1,16 @@
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\bin\Debug\netstandard2.0\AutoCompleteEntry.deps.json
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\bin\Debug\netstandard2.0\AutoCompleteEntry.dll
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\bin\Debug\netstandard2.0\ref\AutoCompleteEntry.dll
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\bin\Debug\netstandard2.0\AutoCompleteEntry.pdb
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.csproj.AssemblyReference.cache
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.AssemblyInfoInputs.cache
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.AssemblyInfo.cs
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.csproj.CoreCompileInputs.cache
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.dll
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\ref\AutoCompleteEntry.dll
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\AutoCompleteEntry.pdb
+C:\Users\berly\Downloads\AutoCompleteEntry-master\AutoCompleteEntry-master\AutoCompleteEntry\obj\Debug\netstandard2.0\Page1.xaml.g.cs
